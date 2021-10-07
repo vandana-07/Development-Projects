@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/07/13/49802/magic-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1500px 1000px;
+}
+.score-card{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #A9F1DF;
+    width: 350px;
+    height: 150px;
+    display: block;
+    text-align: center;
+    margin-top: 260px;
+    border-radius: 5px;
+    padding-top: 38px ;
+}
+.memory-game{
+    /* border: 2px solid chartreuse ; */
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+   perspective:1000px;
+   margin-left: 25px;
+   margin-top: 20px;
+}
+
+.memory-card{
+    width:calc(25% - 10px);
+    height:calc(33.33% - 10px);
+    margin:5px;
+    position: relative;
+    transform:scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+.memory-card:active{
+    transform:scale(.95);
+    transition: transform .4s;
+}
+
+.memory-card.flip{
+    transform:rotateY(180deg);
+}
+
+.back-face{
+   
+    position: absolute;
+    width:100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:#A9F1DF;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    box-shadow: 4px 4px 0px #cfff04;
+}
+
+.front-face{
+   
+    position: absolute;
+    width:100%;
+    height: 100%;
+    padding: 28px 10px 28px 10px;
+    border-radius: 5px;
+    background-color:#A9F1DF;
+    backface-visibility: hidden;
+} 

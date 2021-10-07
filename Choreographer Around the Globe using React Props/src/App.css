@@ -1,0 +1,128 @@
+
+body{
+  background-image: url("https://images.unsplash.com/photo-1548123378-bde4eca81d2d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZGFuY2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  height: 100vh;
+
+  
+}
+
+.heading{
+  color:#FFBCBC;
+}
+
+.App{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100vw;
+ 
+}
+
+div .container {
+  display: block;
+}
+
+.container{
+  height:400px ;
+  width: 500px;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 2px 3px 9px -1px #000;
+}
+
+.Card {
+  width: 90%;
+  background: #FFBCBC;
+  padding: 5px;
+  margin: 6px;
+  border-radius: 5px;
+  box-shadow: 3px 1px 9px -1px #3d581a;
+  color: #053742;
+}
+
+.title{
+  display: inline-block;
+}
+
+.dlt{
+  
+ float:right;
+}
+.dlt:hover {
+  transform: scale(1.2);
+}
+
+.edit{
+  
+  float:right;
+  padding-right: 10px;
+ }
+ .edit:hover {
+   transform: scale(1.2);
+ }
+
+button{
+  -webkit-appearance: none  ;
+  background: -webkit-gradient(to right, #a2ccb6 0%,#fceeb5 50%,#ee786e 100%);
+  background: linear-gradient(to right,#a2ccb6 0%,#fceeb5 50%,#ee786e 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 .25rem 0.5rem rgba(0,0,0,.15);
+  color:  #fff;
+  cursor: pointer;
+  font: 1em Raleway, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 2rem;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3rem;
+  margin: 20px;
+}
+
+
+/* //palette
+$green: #a2ccb6
+$peach: #ee786e
+$sand: #fceeb5
+$white: #fff
+*/
+  
+button:hover{
+animation-name: gradient;
+-webkit-animation-name: gradient;
+animation-duration: 2s;
+-webkit-animation-duration: s;
+animation-iteration-count: 1;
+-webkit-animation-iteration-count: 1;
+animation-fill-mode: forwards;
+-webkit-animation-fill-mode: forwards;
+}
+  
+@keyframes gradient  {
+  0%{
+  background-position: 0% 50%
+100%;
+  background-position: 100% ;
+}
+}
+.editor{
+  width: 90%;
+  background: #FFBCBC;
+  padding: 5px;
+  margin: 6px;
+  border-radius: 5px;
+  box-shadow: 3px 1px 9px -1px #3d581a;
+  color: #053742;
+}
+input{
+  margin:5px;
+  border:1px solid #053742;
+  border-radius: 2px;
+}
